@@ -1,1 +1,1 @@
-# webpack_practice
+# vue-component-tutorial

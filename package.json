@@ -1,8 +1,8 @@
 {
-  "name": "webpack_practice",
+  "name": "vue-components",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:fujioka8700/webpack_practice.git",
+  "repository": "git@github.com:fujioka8700/vue-component-tutorial.git",
   "author": "fujioka8700 <fujioka8700@gmail.com>",
   "license": "MIT",
   "private": true,

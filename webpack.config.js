@@ -7,7 +7,7 @@ module.exports = {
 
     output: {
         path: `${__dirname}/dist`,
-        filename: 'main.js'
+        filename: 'bundle.js'
     },
 
     // ローダーの設定
