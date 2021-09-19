@@ -1,19 +1,19 @@
 <template>
-    <p>Hello, {{ name }}</p>
+  <p>Hello, {{ name }}</p>
 </template>
 
 <style scoped>
 h1 {
-    color: teal;
+  color: teal;
 }
 </style>
 
 <script>
 export default {
-    date() {
-        return {
-            name: 'world'
-        }
+  data () {
+    return {
+      name: 'world'
     }
+  }
 }
 </script>
