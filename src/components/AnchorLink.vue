@@ -3,20 +3,34 @@
 </template>
 
 <script>
-export default {
+export default { // 設定オブジェクト
     props: {
-        text: String,
-        href: String
+        text: {
+            type: String,
+            required: true
+        },
+        href: {
+            type: String,
+            required: true
+        },
+        newTab: {
+            type: Boolean,
+            default: false
+        }
     },
     methods: {
         onClickLink () {
-            window.location.href = this.href
-        }
+            if (this.newTab === true) {
+                window.open(this.href, '_blank');
+            } else {
+                window.location.href = this.href
+            }
+        },
     },
 }
 </script>
 
-<style scoped>
+<style>
 .anchor {
     color: blue;
     cursor: pointer;

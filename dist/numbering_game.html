@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>数当てゲーム</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app2" v-cloak>
+        <number-guess
+        @start="onStart"
+        @collect="onCollect"
+        @lower="onLower"
+        @higher="onHigher"
+        @lose="onLose"
+        ></number-guess>
+        <p>{{ message }}</p>
+        <p>残り：{{ tryCountLeft }}回</p>
+    </div><!-- /#app -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>

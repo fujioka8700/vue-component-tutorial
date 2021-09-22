@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
+    "t-build": "tailwind build ./src/css/style.css -o ./dist/css/style.css",
     "start": "webpack serve",
     "watch": "webpack --watch"
   },
@@ -24,6 +25,7 @@
     "webpack-dev-server": "^4.2.1"
   },
   "dependencies": {
+    "tailwindcss": "^2.2.15",
     "vue": "^2.6.14"
   }
 }
