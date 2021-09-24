@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>Vue Component Tutorial</title>
 </head>
+
 <body>
+  <button class="btn btn-success">success button</button>
+  <button class="btn btn-error">error button</button>
+  <button class="btn">default button</button>
+  <button class="btn btn-primary">primary button</button>
+  <button class="btn btn-link">link button</button>
   <div id="app">
     <hello></hello>
-    <anchor-link
-      href = "https://qiita.com"
-      text = "Qiitaのページ"
-      :new-tab = "true"
-    ></anchor-link>
-    <event-buttons
-      @event-one="onEventOne"
-      @event-two="onEventTwo"
-      @event-three="onEventThree"
-    ></event-buttons>
+    <anchor-link href="https://qiita.com" text="Qiitaのページ" :new-tab="true"></anchor-link>
+    <event-buttons @event-one="onEventOne" @event-two="onEventTwo" @event-three="onEventThree"></event-buttons>
     <pre v-for="argument in arguments">{{ argument }}</pre>
   </div>
+
+  <div id="app3">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-6 col-md-12 col-mx-auto">
+          <markdown-panel></markdown-panel>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="bundle.js"></script>
 </body>
+
 </html>

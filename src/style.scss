@@ -1,0 +1,42 @@
+// Import full Spectre source code
+@import "node_modules/spectre.css/src/spectre";
+
+$primary-color: #0052cc;
+
+#app {
+    padding: 1rem;
+}
+
+pre code {
+    background: #f8f9fa;
+    color: inherit;
+    display: block;
+    line-height: 1.5;
+    overflow-x: auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+.panel-header {
+    align-items: center;
+    display: flex;
+
+    .avatar {
+        margin-right: .8rem;
+    }
+
+    .panel-title {
+        font-size: .825rem;
+        font-weight: bold;
+    }
+}
+
+.panel-body {
+    margin-top: .8rem;
+}
+
+.panel-nav {
+    .tab {
+        padding: 0 .8rem;
+    }
+}

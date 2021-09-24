@@ -1,10 +1,21 @@
 import Vue from 'vue'
 
+// import文を使ってSassファイルを読み込む。
+import "./style.scss";
+
 // Components
 // import Hello from './components/Hello.vue'
 // import AnchorLink from './components/AnchorLink.vue'
 // import EventButtons from './components/EventButtons.vue'
 import NumberGuess from './components/NumberGuess.vue'
+import MarkdownPanel from './components/MarkdownPanel.vue'
+
+const app = new Vue({
+  el: '#app3',
+  components: {
+    MarkdownPanel
+  }
+})
 
 new Vue({
   el: '#app',
