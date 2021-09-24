@@ -7,7 +7,7 @@ import Vue from 'vue'
 import NumberGuess from './components/NumberGuess.vue'
 
 new Vue({
-  el: '#app2',
+  el: '#app',
   data: {
     message: 'スタートボタンを押してください',
     tryCountLeft: 0
@@ -66,3 +66,16 @@ new Vue({
     },
   }
 })*/
+
+Vue.component('counter', {
+  template: '<button @click="num++">{{ num }}</button>',
+  data () {
+    return {
+      num: 0
+    }
+  }
+});
+
+const app2 = new Vue({
+  el: '#app2',
+})

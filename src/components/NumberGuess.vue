@@ -27,7 +27,7 @@
             },
             guess() {
                 if (this.tryCountLeft > 0) {
-                    this.tryCountLeft -= 1
+                    this.tryCountLeft--
                 }
 
                 if (this.tryCountLeft === 0) {

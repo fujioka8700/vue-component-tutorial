@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="app2" v-cloak>
+    <div id="app" v-cloak>
         <number-guess
         @start="onStart"
         @collect="onCollect"
@@ -24,6 +24,11 @@
         <p>{{ message }}</p>
         <p>残り：{{ tryCountLeft }}回</p>
     </div><!-- /#app -->
+    <div id="app2">
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+    </div>><!-- /#app2 -->
     <script src="bundle.js"></script>
 </body>
 
