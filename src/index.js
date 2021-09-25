@@ -8,27 +8,28 @@ import "./style.scss";
 // import AnchorLink from './components/AnchorLink.vue'
 // import EventButtons from './components/EventButtons.vue'
 // import NumberGuess from './components/NumberGuess.vue'
-// import MarkdownPanel from './components/MarkdownPanel.vue'
-import Card from './components/Card.vue'
+import MarkdownPanel from './components/MarkdownPanel.vue'
+// import Card from './components/Card.vue'
 
-new Vue({
-  el: '#app4',
-  components: {
-    Card
-  },
-  methods: {
-    onClick () {
-      alert('Clicked!');
-    }
-  }
-})
 
-// const app = new Vue({
-//   el: '#app3',
+// new Vue({
+//   el: '#app4',
 //   components: {
-//     MarkdownPanel
+//     Card
+//   },
+//   methods: {
+//     onClick () {
+//       alert('Clicked!');
+//     }
 //   }
 // })
+
+const app = new Vue({
+  el: '#app3',
+  components: {
+    MarkdownPanel
+  }
+})
 
 // new Vue({
 //   el: '#app',

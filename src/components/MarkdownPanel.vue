@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="panel-body" v-show="activeTab === 1">
-            <MarkdownEditor v-model="content" />
+            <MarkdownEditor2 v-model="content" />
         </div>
         <div class="panel-body" v-show="activeTab === 2">
             <MarkdownPreview :text="content" />
@@ -31,12 +31,12 @@
 </template>
 
 <script>
-    import MarkdownEditor from './MarkdownEditor.vue'
+    import MarkdownEditor2 from './MarkdownEditor2.vue'
     import MarkdownPreview from './MarkdownPreview.vue'
 
     export default {
         components: {
-            MarkdownEditor,
+            MarkdownEditor2,
             MarkdownPreview
         },
         data() {
