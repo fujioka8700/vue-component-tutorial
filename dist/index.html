@@ -4,10 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Vue Component Tutorial</title>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-  <button class="btn btn-success">success button</button>
+  <div id="app4" v-cloak>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-6 col-md-8 col-mx-auto">
+          <!-- <card image="https://source.unsplash.com/g1Kr4Ozfoac/1600x900"> -->
+          <card>
+            <img slot="image" src="https://source.unsplash.com/g1Kr4Ozfoac/1600x900">
+            <span slot="title">Microsoft</span>
+            <span slot="subtitle">Software and hardware</span>
+            <p slot="body">Empower every person and every organization on the planet to achieve more.</p>
+            <button slot="button" class="btn btn-primary" @click="onClick">Click me</button>
+          </card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <button class="btn btn-success">success button</button>
   <button class="btn btn-error">error button</button>
   <button class="btn">default button</button>
   <button class="btn btn-primary">primary button</button>
@@ -27,7 +48,8 @@
         </div>
       </div>
     </div>
-  </div>
+    <markdown-panel></markdown-panel>
+  </div> -->
 
   <script src="bundle.js"></script>
 </body>
